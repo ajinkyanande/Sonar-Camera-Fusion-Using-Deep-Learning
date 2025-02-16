@@ -1,26 +1,70 @@
-11785: Intro to Deep Learning Project
-Project Title: Sonar and Camera Fusion
-Team Number: 22
-Team Members AndrewIDs: anande, jezemba, mmangipu, mvisvana
+# Sonar-Camera Fusion Using Deep Learning
 
+## Overview
 
-Our project's experiments are all detailed in the IDL_Project.ipynb file.But for the sake of modularity, all the models can be run by simply running main.py with the command
-        python main.py
+This project demonstrates the fusion of sonar and camera data using deep learning techniques. The goal is to leverage the complementary nature of sonar and camera sensors to improve the accuracy of object detection and classification tasks.
 
-Description of each file is given below
+## Features
 
-main.py - file which can run all the experiments and models 
+- **Data Loading and Preprocessing**: Efficiently load and preprocess sonar and camera data.
+- **Baseline Models**: Train and evaluate individual sonar and camera models.
+- **Fusion Models**: Implement and train models that fuse sonar and camera data using various techniques:
+  - Concatenated Embeddings
+  - AutoFusion
+  - GAN Fusion
 
-data_loading.py - file which loads the data from the images and applies transformations
+## Project Structure
 
-baselines.py - file consisting of unimodal baseline camera and sonar models
+- `data_loading.py`: Contains functions for loading and preprocessing data.
+- `baselines.py`: Contains baseline models for sonar and camera data.
+- `baseline_fusion.py`: Contains the model for concatenated embeddings fusion.
+- `autofusion_model.py`: Contains the AutoFusion model.
+- `gan_fusion_model.py`: Contains the GAN Fusion model.
+- `main.py`: Main script to run the training and evaluation.
 
-baseline_fusion.py - file which performs the simplest fusion technique by simply concatenating the camera and sonar embeddings
+## Installation
 
-autofusion_model.py - file which performs autofusion on the trained sonar and camera embeddings
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/Sonar-Camera-Fusion-Using-Deep-Learning.git
+    cd Sonar-Camera-Fusion-Using-Deep-Learning
+    ```
 
-ganfusion_model.py - file which performs ganfusion on the trained sonar and camera embeddings
+2. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
+## Usage
+
+1. **Data Preparation**: Ensure your sonar and camera data is organized in the appropriate directories.
+
+2. **Training Baseline Models**:
+    ```bash
+    python main.py --mode train_baseline
+    ```
+
+3. **Training Fusion Models**:
+    ```bash
+    python main.py --mode train_fusion
+    ```
+
+4. **Evaluating Models**:
+    ```bash
+    python main.py --mode evaluate
+    ```
+
+## Results
+
+The project includes detailed results and visualizations of the performance of the baseline and fusion models. These results demonstrate the effectiveness of data fusion in improving classification accuracy.
+
+## Contact
+
+For any questions or inquiries, please contact [Ajinkya Nande](mailto:ajinkya.nande@example.com).
+
+## Acknowledgements
+
+This project was developed as part of a deep learning course. Special thanks to the course instructors and peers for their valuable feedback and support.
 
 ********************
 IMPORTANT NOTE
