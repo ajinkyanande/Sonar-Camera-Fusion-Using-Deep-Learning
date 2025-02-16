@@ -58,10 +58,6 @@ This project demonstrates the fusion of sonar and camera data using deep learnin
 
 The project includes detailed results and visualizations of the performance of the baseline and fusion models. These results demonstrate the effectiveness of data fusion in improving classification accuracy.
 
-## Contact
-
-For any questions or inquiries, please contact [Ajinkya Nande](mailto:ajinkya.nande@example.com).
-
 ## Acknowledgements
 
 This project was developed as part of a deep learning course. Special thanks to the course instructors and peers for their valuable feedback and support.
